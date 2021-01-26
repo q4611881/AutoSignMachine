@@ -106,7 +106,6 @@ jobs:
 
     # 运行 unicom 签到任务
     - name: Run unicom daily task
-      if: ${{ env.ENABLE_UNICOM }}
       env:
         user: ${{secrets.unicom_user}}
         password: ${{secrets.unicom_password}}
